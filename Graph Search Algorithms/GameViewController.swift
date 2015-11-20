@@ -8,12 +8,18 @@
 
 import UIKit
 import SpriteKit
+import BTNavigationDropdownMenu
 
 class GameViewController: UIViewController {
-
+    
+    
+    var searchTypes = ["Depth First Search", "Breadth First Search", "Best First Search", "A Star Search"]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             let skView = self.view as! SKView
@@ -24,7 +30,8 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
+            scene.scaleMode = .AspectFit
+            scene.size = skView.bounds.size
             
             skView.presentScene(scene)
         }
