@@ -42,7 +42,7 @@ class GameScene: SKScene {
         print("Height")
         print(self.size.height)
         
-        let gridHeight = self.frame.height - (88);
+        let gridHeight = self.frame.height - (88+44);
         cellSize = (self.frame.width / CGFloat(numCols))
         numRows = Int( gridHeight / cellSize)
         print("Num Rows")
@@ -55,13 +55,13 @@ class GameScene: SKScene {
         initGrid()
         setNodePointers()
         let buttonWidth = self.size.width / 4
-        startBtn.makeButton("startBtn", pos: CGPoint(x:0, y:0), size: CGSize(width: buttonWidth, height: 44),
+        startBtn.makeButton("startBtn", pos: CGPoint(x:0, y:0), size: CGSize(width: buttonWidth, height: 88),
             colour: UIColor.blueColor())
-        goalBtn.makeButton("goalBtn", pos: CGPoint(x: buttonWidth, y:0), size: CGSize(width: buttonWidth, height: 44),
+        goalBtn.makeButton("goalBtn", pos: CGPoint(x: buttonWidth, y:0), size: CGSize(width: buttonWidth, height: 88),
             colour: UIColor.redColor())
-        wallBtn.makeButton("wallBtn", pos: CGPoint(x:buttonWidth * 2, y:0), size: CGSize(width: buttonWidth, height: 44),
+        wallBtn.makeButton("wallBtn", pos: CGPoint(x:buttonWidth * 2, y:0), size: CGSize(width: buttonWidth, height: 88),
             colour: UIColor.blackColor())
-        eraseBtn.makeButton("eraseBtn", pos: CGPoint(x:buttonWidth * 3, y:0), size: CGSize(width: buttonWidth, height: 44),
+        eraseBtn.makeButton("eraseBtn", pos: CGPoint(x:buttonWidth * 3, y:0), size: CGSize(width: buttonWidth, height: 88),
             colour: UIColor.whiteColor())
         
         addChild(startBtn)
@@ -74,8 +74,13 @@ class GameScene: SKScene {
         
     }
     
+    func setSearchType(type:String)
+    {
+        print(type)
+    }
+    
     func initGrid() {
-        let bar:CGFloat = 44
+        let bar:CGFloat = 88
         // Bot Left
         var point = CGPoint(x:CGFloat(0) * cellSize, y: bar + CGFloat(0) * cellSize)
         var cell = cellNode(name: "botLeft", pos: point,size: CGSize(width: cellSize, height:cellSize),i: 0, j: 0)

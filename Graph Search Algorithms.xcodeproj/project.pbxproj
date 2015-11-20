@@ -19,6 +19,7 @@
 		B063D2671BFDBCF000FA7732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063D2651BFDBCF000FA7732 /* Main.storyboard */; };
 		B063D2691BFDBCF000FA7732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063D2681BFDBCF000FA7732 /* Assets.xcassets */; };
 		B063D26C1BFDBCF000FA7732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063D26A1BFDBCF000FA7732 /* LaunchScreen.storyboard */; };
+		B0E107531BFFB1D700DE54AB /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B063D2681BFDBCF000FA7732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B063D26B1BFDBCF000FA7732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B063D26D1BFDBCF000FA7732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
 		EF98E98524A1471D6F8A5009 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				B063D25F1BFDBCF000FA7732 /* GameScene.sks */,
 				B063D2611BFDBCF000FA7732 /* GameScene.swift */,
 				B00230041BFE7EA1009DEE59 /* DepthFirstSearch.swift */,
+				B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */,
 				B00230001BFE5D11009DEE59 /* Array2D.swift */,
 				B0022FFE1BFE51A1009DEE59 /* cellNode.swift */,
 				B00230021BFE6FA3009DEE59 /* cellButton.swift */,
@@ -232,6 +235,7 @@
 				B0022FFF1BFE51A1009DEE59 /* cellNode.swift in Sources */,
 				B00230051BFE7EA1009DEE59 /* DepthFirstSearch.swift in Sources */,
 				B00230031BFE6FA3009DEE59 /* cellButton.swift in Sources */,
+				B0E107531BFFB1D700DE54AB /* BreadthFirstSearch.swift in Sources */,
 				B063D2621BFDBCF000FA7732 /* GameScene.swift in Sources */,
 				B063D2641BFDBCF000FA7732 /* GameViewController.swift in Sources */,
 				B063D25E1BFDBCF000FA7732 /* AppDelegate.swift in Sources */,
