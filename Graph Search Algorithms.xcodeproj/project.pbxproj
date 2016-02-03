@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371CA26C339CFF273367E40C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC010B2ED1C5C789C010FE5 /* Pods.framework */; };
 		B0022FFF1BFE51A1009DEE59 /* cellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0022FFE1BFE51A1009DEE59 /* cellNode.swift */; };
 		B00230011BFE5D11009DEE59 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00230001BFE5D11009DEE59 /* Array2D.swift */; };
 		B00230031BFE6FA3009DEE59 /* cellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00230021BFE6FA3009DEE59 /* cellButton.swift */; };
 		B00230051BFE7EA1009DEE59 /* DepthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00230041BFE7EA1009DEE59 /* DepthFirstSearch.swift */; };
+		B028B9581C5F556D002424D1 /* SwiftPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B028B9571C5F556D002424D1 /* SwiftPriorityQueue.swift */; };
+		B03C0EEF1C615E8A001A572B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03C0EEE1C615E8A001A572B /* WebViewController.swift */; };
 		B063D25E1BFDBCF000FA7732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063D25D1BFDBCF000FA7732 /* AppDelegate.swift */; };
 		B063D2601BFDBCF000FA7732 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B063D25F1BFDBCF000FA7732 /* GameScene.sks */; };
 		B063D2621BFDBCF000FA7732 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B063D2611BFDBCF000FA7732 /* GameScene.swift */; };
@@ -19,16 +20,26 @@
 		B063D2671BFDBCF000FA7732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063D2651BFDBCF000FA7732 /* Main.storyboard */; };
 		B063D2691BFDBCF000FA7732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063D2681BFDBCF000FA7732 /* Assets.xcassets */; };
 		B063D26C1BFDBCF000FA7732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063D26A1BFDBCF000FA7732 /* LaunchScreen.storyboard */; };
+		B07C31A51C60791A00730C1E /* AStarSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C31A41C60791A00730C1E /* AStarSearch.swift */; };
+		B07C31A71C60867300730C1E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C31A61C60867300730C1E /* SettingsViewController.swift */; };
+		B07C31A91C608DF700730C1E /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C31A81C608DF700730C1E /* UserSettings.swift */; };
+		B0AE7E5C1C0255770081C7F1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE7E5B1C0255770081C7F1 /* Queue.swift */; };
+		B0AE7E5F1C0257EF0081C7F1 /* DataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE7E5D1C0256EE0081C7F1 /* DataNode.swift */; };
+		B0AE7E611C026B7E0081C7F1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE7E601C026B7E0081C7F1 /* Helper.swift */; };
+		B0AE7E681C0286CB0081C7F1 /* BestFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE7E671C0286CB0081C7F1 /* BestFirstSearch.swift */; };
+		B0AE7E6C1C02D4E70081C7F1 /* HeapNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE7E6B1C02D4E70081C7F1 /* HeapNode.swift */; };
 		B0E107531BFFB1D700DE54AB /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27F33036F740BDA6039019A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2DC010B2ED1C5C789C010FE5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0022FFE1BFE51A1009DEE59 /* cellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellNode.swift; sourceTree = "<group>"; };
 		B00230001BFE5D11009DEE59 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		B00230021BFE6FA3009DEE59 /* cellButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellButton.swift; sourceTree = "<group>"; };
 		B00230041BFE7EA1009DEE59 /* DepthFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthFirstSearch.swift; sourceTree = "<group>"; };
+		B028B9571C5F556D002424D1 /* SwiftPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPriorityQueue.swift; sourceTree = "<group>"; };
+		B03C0EEE1C615E8A001A572B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B03C0EF01C616E81001A572B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B063D25A1BFDBCF000FA7732 /* Graph Search Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graph Search Algorithms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B063D25D1BFDBCF000FA7732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B063D25F1BFDBCF000FA7732 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -38,8 +49,15 @@
 		B063D2681BFDBCF000FA7732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B063D26B1BFDBCF000FA7732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B063D26D1BFDBCF000FA7732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07C31A41C60791A00730C1E /* AStarSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AStarSearch.swift; sourceTree = "<group>"; };
+		B07C31A61C60867300730C1E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B07C31A81C608DF700730C1E /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		B0AE7E5B1C0255770081C7F1 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		B0AE7E5D1C0256EE0081C7F1 /* DataNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataNode.swift; sourceTree = "<group>"; };
+		B0AE7E601C026B7E0081C7F1 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B0AE7E671C0286CB0081C7F1 /* BestFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestFirstSearch.swift; sourceTree = "<group>"; };
+		B0AE7E6B1C02D4E70081C7F1 /* HeapNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapNode.swift; sourceTree = "<group>"; };
 		B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
-		EF98E98524A1471D6F8A5009 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371CA26C339CFF273367E40C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,18 +74,10 @@
 		0124EA3E1A906D3D76FF27A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B03C0EF01C616E81001A572B /* CoreData.framework */,
 				2DC010B2ED1C5C789C010FE5 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7816CB1FAF244887C3650285 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EF98E98524A1471D6F8A5009 /* Pods.debug.xcconfig */,
-				27F33036F740BDA6039019A6 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		B063D2511BFDBCF000FA7732 = {
@@ -76,7 +85,6 @@
 			children = (
 				B063D25C1BFDBCF000FA7732 /* Graph Search Algorithms */,
 				B063D25B1BFDBCF000FA7732 /* Products */,
-				7816CB1FAF244887C3650285 /* Pods */,
 				0124EA3E1A906D3D76FF27A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -92,21 +100,47 @@
 		B063D25C1BFDBCF000FA7732 /* Graph Search Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				B0AE7E631C027ADA0081C7F1 /* SearchAlgorithms */,
+				B0AE7E5A1C02555D0081C7F1 /* DataStructures */,
+				B0022FFE1BFE51A1009DEE59 /* cellNode.swift */,
+				B07C31A81C608DF700730C1E /* UserSettings.swift */,
+				B00230021BFE6FA3009DEE59 /* cellButton.swift */,
 				B063D25D1BFDBCF000FA7732 /* AppDelegate.swift */,
 				B063D25F1BFDBCF000FA7732 /* GameScene.sks */,
 				B063D2611BFDBCF000FA7732 /* GameScene.swift */,
-				B00230041BFE7EA1009DEE59 /* DepthFirstSearch.swift */,
-				B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */,
-				B00230001BFE5D11009DEE59 /* Array2D.swift */,
-				B0022FFE1BFE51A1009DEE59 /* cellNode.swift */,
-				B00230021BFE6FA3009DEE59 /* cellButton.swift */,
+				B07C31A61C60867300730C1E /* SettingsViewController.swift */,
 				B063D2631BFDBCF000FA7732 /* GameViewController.swift */,
+				B03C0EEE1C615E8A001A572B /* WebViewController.swift */,
 				B063D2651BFDBCF000FA7732 /* Main.storyboard */,
 				B063D2681BFDBCF000FA7732 /* Assets.xcassets */,
 				B063D26A1BFDBCF000FA7732 /* LaunchScreen.storyboard */,
 				B063D26D1BFDBCF000FA7732 /* Info.plist */,
+				B0AE7E601C026B7E0081C7F1 /* Helper.swift */,
 			);
 			path = "Graph Search Algorithms";
+			sourceTree = "<group>";
+		};
+		B0AE7E5A1C02555D0081C7F1 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				B0AE7E5B1C0255770081C7F1 /* Queue.swift */,
+				B0AE7E5D1C0256EE0081C7F1 /* DataNode.swift */,
+				B0AE7E6B1C02D4E70081C7F1 /* HeapNode.swift */,
+				B00230001BFE5D11009DEE59 /* Array2D.swift */,
+				B028B9571C5F556D002424D1 /* SwiftPriorityQueue.swift */,
+			);
+			name = DataStructures;
+			sourceTree = "<group>";
+		};
+		B0AE7E631C027ADA0081C7F1 /* SearchAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				B00230041BFE7EA1009DEE59 /* DepthFirstSearch.swift */,
+				B0E107521BFFB1D700DE54AB /* BreadthFirstSearch.swift */,
+				B0AE7E671C0286CB0081C7F1 /* BestFirstSearch.swift */,
+				B07C31A41C60791A00730C1E /* AStarSearch.swift */,
+			);
+			name = SearchAlgorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +150,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B063D2701BFDBCF000FA7732 /* Build configuration list for PBXNativeTarget "Graph Search Algorithms" */;
 			buildPhases = (
-				26F319037A933D9659CF55FD /* Check Pods Manifest.lock */,
 				B063D2561BFDBCF000FA7732 /* Sources */,
 				B063D2571BFDBCF000FA7732 /* Frameworks */,
 				B063D2581BFDBCF000FA7732 /* Resources */,
-				8D057BA3D0243346326073CA /* Embed Pods Frameworks */,
-				BED8224CA73857329D1D23C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,12 +169,13 @@
 		B063D2521BFDBCF000FA7732 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Robert Canton";
 				TargetAttributes = {
 					B063D2591BFDBCF000FA7732 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6BES3VUFCX;
 					};
 				};
 			};
@@ -179,67 +211,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		26F319037A933D9659CF55FD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8D057BA3D0243346326073CA /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BED8224CA73857329D1D23C3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B063D2561BFDBCF000FA7732 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AE7E611C026B7E0081C7F1 /* Helper.swift in Sources */,
+				B03C0EEF1C615E8A001A572B /* WebViewController.swift in Sources */,
 				B0022FFF1BFE51A1009DEE59 /* cellNode.swift in Sources */,
+				B0AE7E5F1C0257EF0081C7F1 /* DataNode.swift in Sources */,
 				B00230051BFE7EA1009DEE59 /* DepthFirstSearch.swift in Sources */,
 				B00230031BFE6FA3009DEE59 /* cellButton.swift in Sources */,
+				B07C31A51C60791A00730C1E /* AStarSearch.swift in Sources */,
 				B0E107531BFFB1D700DE54AB /* BreadthFirstSearch.swift in Sources */,
+				B07C31A71C60867300730C1E /* SettingsViewController.swift in Sources */,
+				B028B9581C5F556D002424D1 /* SwiftPriorityQueue.swift in Sources */,
+				B0AE7E681C0286CB0081C7F1 /* BestFirstSearch.swift in Sources */,
 				B063D2621BFDBCF000FA7732 /* GameScene.swift in Sources */,
 				B063D2641BFDBCF000FA7732 /* GameViewController.swift in Sources */,
 				B063D25E1BFDBCF000FA7732 /* AppDelegate.swift in Sources */,
+				B0AE7E5C1C0255770081C7F1 /* Queue.swift in Sources */,
+				B0AE7E6C1C02D4E70081C7F1 /* HeapNode.swift in Sources */,
 				B00230011BFE5D11009DEE59 /* Array2D.swift in Sources */,
+				B07C31A91C608DF700730C1E /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,25 +344,32 @@
 		};
 		B063D2711BFDBCF000FA7732 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF98E98524A1471D6F8A5009 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Graph Search Algorithms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rcanton.Graph-Search-Algorithms";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcanton.GraphSearchAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B063D2721BFDBCF000FA7732 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27F33036F740BDA6039019A6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Graph Search Algorithms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rcanton.Graph-Search-Algorithms";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rcanton.GraphSearchAlgorithms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

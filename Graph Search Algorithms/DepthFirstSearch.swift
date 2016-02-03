@@ -6,7 +6,6 @@
 //  Copyright © 2015 Robert Canton. All rights reserved.
 //
 import SpriteKit
-import Foundation
 
 class DepthFirstSearch
 {
@@ -30,7 +29,6 @@ class DepthFirstSearch
         {
             n.visited = true
             if (n.isGoal) {
-                print("Found end")
                 endFound = true
                 numVisted = 0
             }
@@ -42,32 +40,28 @@ class DepthFirstSearch
                 {
                     let _hue:CGFloat = (CGFloat(numVisted) / CGFloat(numNodes)) * 0.3 + 0.6
                     n.colour(UIColor(hue: _hue, saturation: 0.5, brightness: 1, alpha: 1))
+                    n.numberLabel.text = "\(numVisted-1)"
+                    n.goalLabel.text = "\(n.goalDistance!)"
+                    n.startLabel.text = "\(n.startDistance!)"
+                    n.bothLabel.text = "\(n.goalDistance! + n.startDistance!)"
                 }
                 
-                let n1 = n.top_node
-                let n2 = n.rig_node
-                let n3 = n.bot_node
-                let n4 = n.lef_node
+                let n1 = UserSettings.getNextNode(n, num: 1)
+                let n2 = UserSettings.getNextNode(n, num: 2)
+                let n3 = UserSettings.getNextNode(n, num: 3)
+                let n4 = UserSettings.getNextNode(n, num: 4)
                 
-                if n1 != nil {
-                    if n1!.isVisitable() {
-                        search(n1!)
-                    }
+                if n1 != nil && n1!.isVisitable() {
+                    search(n1!)
                 }
-                if n2 != nil {
-                    if n2!.isVisitable() {
-                        search(n2!)
-                    }
+                if n2 != nil && n2!.isVisitable() {
+                    search(n2!)
                 }
-                if n3 != nil {
-                    if n3!.isVisitable() {
-                        search(n3!)
-                    }
+                if n3 != nil && n3!.isVisitable() {
+                    search(n3!)
                 }
-                if n4 != nil {
-                    if n4!.isVisitable() {
-                        search(n4!)
-                    }
+                if n4 != nil && n4!.isVisitable() {
+                    search(n4!)
                 }
                 
             }

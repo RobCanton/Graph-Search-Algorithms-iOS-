@@ -14,22 +14,38 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     let searchTypes = ["Depth First Search", "Breadth First Search", "Best First Search", "A Star Search"]
     var bannerView: ADBannerView!
     
+    @IBAction func handleTitleButton(sender:UIButton!)
+    {
+        let ac = UIAlertController(title: "Select Search Type", message: nil, preferredStyle: .ActionSheet)
+        ac.popoverPresentationController?.sourceView = sender
+        for type in searchTypes {
+            ac.addAction(UIAlertAction(title: type, style: .Default, handler: selectType))
+        }
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    @IBAction func handleInfoButtion(sender:UIBarButtonItem!)
+    {
+        let skView = view as! SKView
+        let gameScene = skView.scene as! GameScene
+        
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("InfoViewController") as! WebViewController
+        controller.searchType = gameScene.searchType
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBOutlet weak var navTitle:UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let infoButton : UIButton = UIButton(type: .DetailDisclosure)
-        
-        let settingsButton : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: "openTapped")
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
-        self.navigationItem.leftBarButtonItem = settingsButton
-        
         
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
+            skView.showsFPS = false
+            skView.showsNodeCount = false
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true
@@ -42,6 +58,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
             
         }
         
+        
         bannerView = ADBannerView(adType: .Banner)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         bannerView.delegate = self
@@ -52,23 +69,14 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[bannerView]|", options: [], metrics: nil, views: viewsDictionary))
     }
     
-    func openTapped() {
-        let ac = UIAlertController(title: "Select search type...", message: nil, preferredStyle: .ActionSheet)
-
-        for type in searchTypes {
-            ac.addAction(UIAlertAction(title: type, style: .Default, handler: selectType))
-        }
-        
-        ac.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        presentViewController(ac, animated: true, completion: nil)
-    }
     
     func selectType(action: UIAlertAction!) {
         
         let skView = view as! SKView
         let gameScene = skView.scene as! GameScene
         gameScene.setSearchType(action.title!)
-        navigationItem.title = action.title!
+        navTitle.setTitle(action.title!, forState: UIControlState.Normal)
+        //navTitle.titleLabel!.textAlignment = .Center
     }
     
     func bannerViewDidLoadAd(banner: ADBannerView!) {
@@ -77,6 +85,15 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
         bannerView.hidden = true
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "toSettings" {
+            let nav = segue.destinationViewController as! UINavigationController
+            let vc = nav.viewControllers[0] as! SettingsViewController
+            let skView = view as! SKView
+            let gameScene = skView.scene as! GameScene
+            vc.gridDelegate = gameScene
+        }
     }
 
     override func shouldAutorotate() -> Bool {
@@ -90,6 +107,8 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
             return .All
         }
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -99,4 +118,5 @@ class GameViewController: UIViewController, ADBannerViewDelegate {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-}
+    
+    }
